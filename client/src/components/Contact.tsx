@@ -6,7 +6,7 @@ export default function Contact() {
   const socialLinks = [
     { icon: Linkedin, label: "LinkedIn", color: "bg-primary", href: "#" },
     { icon: Twitter, label: "Twitter", color: "bg-secondary", href: "#" },
-    { icon: Github, label: "GitHub", color: "bg-accent", href: "#" },
+    { icon: Github, label: "GitHub", color: "bg-chart-3", href: "#" },
   ];
 
   return (
@@ -53,12 +53,13 @@ export default function Contact() {
               <h3 className="text-2xl font-black uppercase mb-4">Areas of Expertise</h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "Supply Chain Management",
                   "Business Administration",
+                  "AI in Education",
                   "Decision Support Systems",
                   "Inventory Control",
                   "Industrial Engineering",
-                  "Online Education"
+                  "Online Education",
+                  "Educational Technology"
                 ].map((area, i) => (
                   <span
                     key={i}
@@ -78,7 +79,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <div className="bg-chart-3 border-8 border-black p-8 shadow-brutal-xl">
+            <div className="bg-secondary border-8 border-black p-8 shadow-brutal-xl">
               <h3 className="text-3xl font-black uppercase mb-6">Connect on Social</h3>
               <div className="space-y-4">
                 {socialLinks.map((social, index) => {
@@ -104,7 +105,7 @@ export default function Contact() {
             </div>
 
             <motion.div
-              className="bg-secondary border-6 border-black p-6 rotate-1 shadow-brutal-lg text-center"
+              className="bg-primary border-6 border-black p-6 rotate-1 shadow-brutal-lg text-center"
               whileHover={{ rotate: 0, scale: 1.05 }}
             >
               <p className="text-xl font-black uppercase">

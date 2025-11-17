@@ -6,9 +6,9 @@ export default function Hero() {
   const floatingShapes = [
     { color: "bg-primary", size: "w-32 h-32", x: "10%", y: "20%", rotation: 45, delay: 0 },
     { color: "bg-secondary", size: "w-24 h-24", x: "80%", y: "15%", rotation: -30, delay: 0.2 },
-    { color: "bg-accent", size: "w-28 h-28", x: "15%", y: "70%", rotation: 15, delay: 0.4 },
-    { color: "bg-chart-4", size: "w-20 h-20", x: "85%", y: "75%", rotation: -45, delay: 0.6 },
-    { color: "bg-chart-3", size: "w-16 h-16", x: "50%", y: "10%", rotation: 60, delay: 0.8 },
+    { color: "bg-chart-3", size: "w-28 h-28", x: "15%", y: "70%", rotation: 15, delay: 0.4 },
+    { color: "bg-muted", size: "w-20 h-20", x: "85%", y: "75%", rotation: -45, delay: 0.6 },
+    { color: "bg-primary", size: "w-16 h-16", x: "50%", y: "10%", rotation: 60, delay: 0.8 },
   ];
 
   const scrollToSection = (id: string) => {
@@ -16,7 +16,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-24">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-24">
       {floatingShapes.map((shape, i) => (
         <motion.div
           key={i}
@@ -52,7 +52,7 @@ export default function Hero() {
               animate={{ opacity: 1, x: 0, rotate: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-6xl md:text-8xl font-black uppercase leading-none">
+              <h1 className="text-6xl md:text-8xl font-black uppercase leading-none" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                 <motion.span
                   className="block"
                   initial={{ opacity: 0, y: 20 }}
@@ -79,7 +79,7 @@ export default function Hero() {
               transition={{ delay: 0.6, type: "spring", stiffness: 200 }}
             >
               <p className="text-2xl md:text-3xl font-bold uppercase">
-                Professor & Supply Chain Expert
+                Professor at Purdue University Global
               </p>
             </motion.div>
 
@@ -101,8 +101,8 @@ export default function Hero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="bg-accent border-4 border-black shadow-brutal hover:shadow-brutal-lg transition-all hover:-translate-y-1 text-lg font-bold uppercase px-8 py-6 h-auto rounded-none"
-                onClick={() => scrollToSection('education')}
+                className="bg-white border-4 border-black shadow-brutal hover:shadow-brutal-lg transition-all hover:-translate-y-1 text-lg font-bold uppercase px-8 py-6 h-auto rounded-none"
+                onClick={() => scrollToSection('focus')}
                 data-testid="button-learn-more"
               >
                 Learn More
@@ -117,12 +117,12 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1, duration: 0.8 }}
           >
-            <div className="bg-chart-3 border-8 border-black p-8 -rotate-3 shadow-brutal-xl">
+            <div className="bg-secondary border-8 border-black p-8 -rotate-3 shadow-brutal-xl">
               <div className="text-sm font-bold uppercase mb-4 text-black/70">Quick Stats</div>
               <div className="space-y-4">
                 <div className="bg-white border-4 border-black p-4">
-                  <div className="text-4xl font-black" data-testid="text-years-experience">15+</div>
-                  <div className="text-sm font-bold uppercase">Years Teaching</div>
+                  <div className="text-4xl font-black" data-testid="text-years-experience">16+</div>
+                  <div className="text-sm font-bold uppercase">Years at Purdue</div>
                 </div>
                 <div className="bg-white border-4 border-black p-4">
                   <div className="text-4xl font-black" data-testid="text-degrees">3</div>

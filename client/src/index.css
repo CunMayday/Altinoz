@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* LIGHT MODE - NEOBRUTALIST */
+/* LIGHT MODE - PURDUE UNIVERSITY COLORS */
 :root {
   --button-outline: rgba(0,0,0, .10);
   --badge-outline: rgba(0,0,0, .05);
@@ -18,32 +18,33 @@
   --sidebar: 0 0% 100%;
   --sidebar-foreground: 0 0% 0%;
   --sidebar-border: 0 0% 0%;
-  --sidebar-primary: 180 100% 50%;
+  --sidebar-primary: 38 84% 41%;
   --sidebar-primary-foreground: 0 0% 0%;
-  --sidebar-accent: 85 100% 50%;
+  --sidebar-accent: 38 31% 67%;
   --sidebar-accent-foreground: 0 0% 0%;
-  --sidebar-ring: 180 100% 50%;
+  --sidebar-ring: 38 84% 41%;
   --popover: 0 0% 100%;
   --popover-foreground: 0 0% 0%;
   --popover-border: 0 0% 0%;
-  --primary: 180 100% 50%;
+  --primary: 38 84% 41%;
   --primary-foreground: 0 0% 0%;
-  --secondary: 330 100% 60%;
+  --secondary: 38 31% 67%;
   --secondary-foreground: 0 0% 0%;
-  --muted: 0 0% 95%;
-  --muted-foreground: 0 0% 40%;
-  --accent: 85 100% 50%;
+  --muted: 33 10% 59%;
+  --muted-foreground: 60 3% 22%;
+  --accent: 38 84% 41%;
   --accent-foreground: 0 0% 0%;
-  --destructive: 25 100% 50%;
-  --destructive-foreground: 0 0% 0%;
+  --destructive: 0 85% 40%;
+  --destructive-foreground: 0 0% 100%;
   --input: 0 0% 0%;
-  --ring: 180 100% 50%;
-  --chart-1: 180 100% 50%;
-  --chart-2: 330 100% 60%;
-  --chart-3: 60 100% 50%;
-  --chart-4: 25 100% 50%;
-  --chart-5: 85 100% 50%;
+  --ring: 38 84% 41%;
+  --chart-1: 38 84% 41%;
+  --chart-2: 38 31% 67%;
+  --chart-3: 60 3% 22%;
+  --chart-4: 33 10% 59%;
+  --chart-5: 0 0% 0%;
   --font-sans: Space Grotesk, sans-serif;
+  --font-display: Montserrat, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Space Mono, monospace;
   --radius: .5rem;

@@ -4,29 +4,24 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react";
 const education = [
   {
     degree: "PhD",
-    field: "Textile Technology and Management",
-    minor: "Industrial Engineering",
     school: "North Carolina State University",
     location: "Raleigh, NC",
     years: "1997-2001",
-    highlight: "Research in supplier selection in textile supply chains",
     color: "bg-primary",
   },
   {
     degree: "MBA",
-    field: "Business Administration",
     school: "Georgia Institute of Technology",
     location: "Atlanta, GA",
     years: "1994-1996",
     color: "bg-secondary",
   },
   {
-    degree: "BS",
-    field: "Industrial Engineering",
+    degree: "BS - Industrial Engineering",
     school: "North Carolina State University",
     location: "Raleigh, NC",
     years: "1990-1994",
-    color: "bg-accent",
+    color: "bg-chart-3",
   },
 ];
 
@@ -73,29 +68,18 @@ export default function Education() {
                   </div>
                 </div>
 
-                <h3 className="text-3xl font-bold mb-2" data-testid={`text-field-${index}`}>{edu.field}</h3>
-                {edu.minor && (
-                  <p className="text-lg font-semibold mb-4 text-muted-foreground">
-                    Minor: {edu.minor}
-                  </p>
-                )}
+                <h3 className="text-3xl font-bold mb-4" data-testid={`text-school-${index}`}>{edu.school}</h3>
 
-                <div className="flex flex-wrap gap-4 mb-4">
+                <div className="flex flex-wrap gap-4">
                   <div className="flex items-center gap-2 bg-muted border-2 border-black px-4 py-2">
                     <MapPin className="h-4 w-4" />
-                    <span className="font-bold text-sm">{edu.school}</span>
+                    <span className="font-bold text-sm">{edu.location}</span>
                   </div>
                   <div className="flex items-center gap-2 bg-muted border-2 border-black px-4 py-2">
                     <Calendar className="h-4 w-4" />
-                    <span className="font-bold text-sm">{edu.location}</span>
+                    <span className="font-bold text-sm">{edu.years}</span>
                   </div>
                 </div>
-
-                {edu.highlight && (
-                  <p className="text-base font-medium border-l-4 border-black pl-4 italic">
-                    {edu.highlight}
-                  </p>
-                )}
               </div>
             </motion.div>
           ))}
