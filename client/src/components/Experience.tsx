@@ -8,13 +8,21 @@ const experiences = [
     period: "2009 - Present",
     highlights: [
       "Faculty lead in charge of developing the new Doctorate in Business Administration program",
-      "Received the 2025 Purdue University Online award for Innovative Online Use of Technology",
-      "Received the 2023 Purdue University Online award for Excellence in Online Course Design",
-      "Received the 2021 ACBSP Teaching Excellence Award, one of 7 winners in the U.S.",
-      "Recognized as the 2016 School of Business Professor of the Year",
-      "Faculty advisor for Delta Mu Delta Honor Society",
+      "Course lead for GB 513 Business Statistics, GB 700 Doctoral Studies in Business and GB 701 Business Statistics",
     ],
     color: "bg-primary",
+  },
+  {
+    title: "Assistant Professor",
+    organization: "East Carolina University",
+    period: "2003 - 2008",
+    highlights: [
+      "Marketing and Supply Chain Management department, College of Business",
+      "Teaching MBA and undergraduate courses in operations management, business decision modeling, supply chain management",
+      "Research in decision analysis, fuzzy logic, supply chain management",
+      "Took the lead in establishing a new online supply chain program. Developed a new SCM course, then a concentration program which eventually merged with Marketing to become a new department",
+    ],
+    color: "bg-secondary",
   },
   {
     title: "Post-doctoral Research Fellow",
@@ -22,8 +30,9 @@ const experiences = [
     period: "2001 - 2003",
     highlights: [
       "Created fuzzy logic based decision support system for supplier selection",
+      "Filed for 2 patents for building linguistic decision rules",
     ],
-    color: "bg-secondary",
+    color: "bg-chart-3",
   },
   {
     title: "Research Assistant",
@@ -38,7 +47,7 @@ const experiences = [
       "Developed two software programs",
       "Research results led to opportunities for patents and business establishment",
     ],
-    color: "bg-chart-3",
+    color: "bg-muted",
   },
   {
     title: "Consultant",
@@ -51,7 +60,7 @@ const experiences = [
       "Expanded work to additional product lines after initial success",
       "Analyzed shipping warehouse efficiency",
     ],
-    color: "bg-muted",
+    color: "bg-primary",
   },
   {
     title: "Operations Analyst",

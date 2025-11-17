@@ -122,14 +122,14 @@ export default function Hero() {
               <div className="space-y-4">
                 <div className="bg-white border-4 border-black p-4">
                   <div className="text-4xl font-black" data-testid="text-years-experience">16+</div>
-                  <div className="text-sm font-bold uppercase">Years at Purdue</div>
+                  <div className="text-sm font-bold uppercase">Years at Purdue Global</div>
                 </div>
                 <div className="bg-white border-4 border-black p-4">
-                  <div className="text-4xl font-black" data-testid="text-degrees">3</div>
-                  <div className="text-sm font-bold uppercase">Advanced Degrees</div>
+                  <div className="text-4xl font-black" data-testid="text-degrees">22</div>
+                  <div className="text-sm font-bold uppercase">Years Teaching Experience</div>
                 </div>
                 <div className="bg-white border-4 border-black p-4">
-                  <div className="text-4xl font-black" data-testid="text-awards">5+</div>
+                  <div className="text-4xl font-black" data-testid="text-awards">4</div>
                   <div className="text-sm font-bold uppercase">Major Awards</div>
                 </div>
               </div>

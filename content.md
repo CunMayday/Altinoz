@@ -51,9 +51,9 @@ Professor at Purdue University Global
 **Header**: "Welcome students. You are in good hands!"
 
 **Statistics**:
-- **16+** Years at Purdue
-- **3** Advanced Degrees
-- **5+** Major Awards
+- **16+** Years at Purdue Global
+- **22** Years Teaching Experience
+- **4** Major Awards
 
 ---
 
@@ -97,7 +97,7 @@ Professor at Purdue University Global
 
 **Role 1**:
 - **Category**: Program Development
-- **Description**: Faculty lead - Doctorate in Business Administration program
+- **Description**: Faculty lead in developing the Doctorate in Business Administration program
 
 **Role 2**:
 - **Category**: Faculty Advisor
@@ -147,18 +147,21 @@ Professor at Purdue University Global
 - **School**: North Carolina State University
 - **Location**: Raleigh, NC
 - **Years**: 1997-2001
+- **Display Year**: 2001
 
 #### Degree 2
 - **Degree**: MBA
 - **School**: Georgia Institute of Technology
 - **Location**: Atlanta, GA
 - **Years**: 1994-1996
+- **Display Year**: 1996
 
 #### Degree 3
 - **Degree**: BS - Industrial Engineering
 - **School**: North Carolina State University
 - **Location**: Raleigh, NC
 - **Years**: 1990-1994
+- **Display Year**: 1994
 
 ---
 
@@ -167,7 +170,7 @@ Professor at Purdue University Global
 ### Section Title
 **Experience**
 
-### Position Cards (5 total)
+### Position Cards (6 total)
 
 #### Position 1: Professor at Purdue University Global
 - **Title**: Professor
@@ -175,20 +178,27 @@ Professor at Purdue University Global
 - **Period**: 2009 - Present
 - **Highlights**:
   - Faculty lead in charge of developing the new Doctorate in Business Administration program
-  - Received the 2025 Purdue University Online award for Innovative Online Use of Technology
-  - Received the 2023 Purdue University Online award for Excellence in Online Course Design
-  - Received the 2021 ACBSP Teaching Excellence Award, one of 7 winners in the U.S.
-  - Recognized as the 2016 School of Business Professor of the Year
-  - Faculty advisor for Delta Mu Delta Honor Society
+  - Course lead for GB 513 Business Statistics, GB 700 Doctoral Studies in Business and GB 701 Business Statistics
 
-#### Position 2: Post-doctoral Research Fellow
+#### Position 2: Assistant Professor
+- **Title**: Assistant Professor
+- **Organization**: East Carolina University
+- **Period**: 2003 - 2008
+- **Highlights**:
+  - Marketing and Supply Chain Management department, College of Business
+  - Teaching MBA and undergraduate courses in operations management, business decision modeling, supply chain management
+  - Research in decision analysis, fuzzy logic, supply chain management
+  - Took the lead in establishing a new online supply chain program. Developed a new SCM course, then a concentration program which eventually merged with Marketing to become a new department
+
+#### Position 3: Post-doctoral Research Fellow
 - **Title**: Post-doctoral Research Fellow
 - **Organization**: North Carolina State University
 - **Period**: 2001 - 2003
 - **Highlights**:
   - Created fuzzy logic based decision support system for supplier selection
+  - Filed for 2 patents for building linguistic decision rules
 
-#### Position 3: Research Assistant
+#### Position 4: Research Assistant
 - **Title**: Research Assistant
 - **Organization**: North Carolina State University
 - **Period**: 1997 - 2001
@@ -201,7 +211,7 @@ Professor at Purdue University Global
   - Developed two software programs
   - Research results led to opportunities for patents and business establishment
 
-#### Position 4: Consultant
+#### Position 5: Consultant
 - **Title**: Consultant
 - **Organization**: CIBA Vision, Atlanta GA
 - **Period**: 1995 - 1997
@@ -212,7 +222,7 @@ Professor at Purdue University Global
   - Expanded work to additional product lines after initial success
   - Analyzed shipping warehouse efficiency
 
-#### Position 5: Operations Analyst
+#### Position 6: Operations Analyst
 - **Title**: Operations Analyst
 - **Organization**: IBM, Atlanta GA
 - **Period**: 1995
@@ -360,7 +370,7 @@ Current website uses:
 ## SEO & Meta Information
 
 ### Page Title
-Dr. Cuneyt Altinoz - Professor & Supply Chain Expert
+Dr. Altinoz Website
 
 ### Meta Description
 Portfolio of Dr. Cuneyt Altinoz, Professor at Purdue University Global specializing in supply chain management, business administration, and decision support systems.

@@ -57,7 +57,7 @@ export default function Education() {
               data-testid={`card-education-${index}`}
             >
               <div className="absolute -top-8 -left-8 text-9xl font-black opacity-20 select-none">
-                {edu.years.split('-')[0]}
+                {edu.years.split('-')[1]}
               </div>
 
               <div className="relative">
