@@ -122,7 +122,7 @@ export default function Awards() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-white border-4 border-black p-4">
               <div className="font-bold text-sm uppercase mb-1 text-muted-foreground">Program Development</div>
-              <div className="text-lg font-black">Faculty lead - Doctorate in Business Administration program</div>
+              <div className="text-lg font-black">Program Development Lead - Doctorate in Business Administration program</div>
             </div>
             <div className="bg-white border-4 border-black p-4">
               <div className="font-bold text-sm uppercase mb-1 text-muted-foreground">Faculty Advisor</div>

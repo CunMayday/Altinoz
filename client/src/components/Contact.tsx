@@ -53,11 +53,8 @@ export default function Contact() {
               <h3 className="text-2xl font-black uppercase mb-4">Areas of Expertise</h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "Business Administration",
                   "AI in Education",
                   "Decision Support Systems",
-                  "Inventory Control",
-                  "Industrial Engineering",
                   "Online Education",
                   "Educational Technology"
                 ].map((area, i) => (

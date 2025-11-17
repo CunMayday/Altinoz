@@ -56,7 +56,7 @@ export default function Education() {
               }`}
               data-testid={`card-education-${index}`}
             >
-              <div className="absolute -top-8 -left-8 text-9xl font-black opacity-20 select-none">
+              <div className="absolute -top-8 -right-8 text-9xl font-black opacity-20 select-none -z-10">
                 {edu.years.split('-')[1]}
               </div>
 

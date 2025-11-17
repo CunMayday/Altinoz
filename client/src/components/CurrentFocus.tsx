@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: "Analytics Case Study",
-    description: "Comprehensive case study example demonstrating business analytics applications",
+    description: "Webapp presenting case study practice with built in randomization and statistical analysis.",
     url: "https://cunmayday.github.io/webtests/caseada.html",
     color: "bg-secondary",
   },
@@ -52,7 +52,7 @@ export default function CurrentFocus() {
         >
           <h3 className="text-3xl font-black uppercase mb-4">AI Systems for Education</h3>
           <p className="text-lg font-medium leading-relaxed">
-            Evaluation of developing AI systems for education - use of Gems, GPTs and webapps coded with AI assistance.
+            Exploring methods for leveraging generative AI for improving learning experience. Selected samples below.
           </p>
         </motion.div>
 

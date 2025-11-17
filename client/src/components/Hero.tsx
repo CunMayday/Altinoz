@@ -3,6 +3,10 @@ import { Mail, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
+  const currentYear = new Date().getFullYear();
+  const yearsAtPurdue = currentYear - 2009;
+  const yearsTeaching = currentYear - 2003;
+
   const floatingShapes = [
     { color: "bg-primary", size: "w-32 h-32", x: "10%", y: "20%", rotation: 45, delay: 0 },
     { color: "bg-secondary", size: "w-24 h-24", x: "80%", y: "15%", rotation: -30, delay: 0.2 },
@@ -121,11 +125,11 @@ export default function Hero() {
               <div className="text-sm font-bold uppercase mb-4 text-black/70">Welcome students. You are in good hands!</div>
               <div className="space-y-4">
                 <div className="bg-white border-4 border-black p-4">
-                  <div className="text-4xl font-black" data-testid="text-years-experience">16+</div>
+                  <div className="text-4xl font-black" data-testid="text-years-experience">{yearsAtPurdue}</div>
                   <div className="text-sm font-bold uppercase">Years at Purdue Global</div>
                 </div>
                 <div className="bg-white border-4 border-black p-4">
-                  <div className="text-4xl font-black" data-testid="text-degrees">22</div>
+                  <div className="text-4xl font-black" data-testid="text-degrees">{yearsTeaching}</div>
                   <div className="text-sm font-bold uppercase">Years Teaching Experience</div>
                 </div>
                 <div className="bg-white border-4 border-black p-4">
