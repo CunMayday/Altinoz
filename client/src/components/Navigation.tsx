@@ -55,7 +55,7 @@ export default function Navigation() {
               onClick={() => scrollToSection('hero')}
               data-testid="link-logo"
             >
-              C.A.
+              Professor Altinoz
             </motion.div>
 
             <div className="hidden md:flex gap-2">

@@ -102,7 +102,7 @@ export default function Hero() {
                 size="lg"
                 variant="outline"
                 className="bg-white border-4 border-black shadow-brutal hover:shadow-brutal-lg transition-all hover:-translate-y-1 text-lg font-bold uppercase px-8 py-6 h-auto rounded-none"
-                onClick={() => scrollToSection('focus')}
+                onClick={() => scrollToSection('awards')}
                 data-testid="button-learn-more"
               >
                 Learn More
@@ -118,7 +118,7 @@ export default function Hero() {
             transition={{ delay: 1, duration: 0.8 }}
           >
             <div className="bg-secondary border-8 border-black p-8 -rotate-3 shadow-brutal-xl">
-              <div className="text-sm font-bold uppercase mb-4 text-black/70">Quick Stats</div>
+              <div className="text-sm font-bold uppercase mb-4 text-black/70">Welcome students. You are in good hands!</div>
               <div className="space-y-4">
                 <div className="bg-white border-4 border-black p-4">
                   <div className="text-4xl font-black" data-testid="text-years-experience">16+</div>
