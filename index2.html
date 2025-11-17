@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Altinoz Website</title>
+  <meta name="description" content="Portfolio of Dr. Cuneyt Altinoz, Professor at Purdue University Global specializing in supply chain management, business administration, and decision support systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      /* Purdue Colors */
+      --campus-gold: #C28E0E;
+      --athletic-gold: #CEB888;
+      --purdue-black: #000000;
+      --gray: #9D968D;
+      --dark-gray: #373A36;
+      --white: #FFFFFF;
+      --muted: #f5f5f5;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: var(--white);
+      color: var(--purdue-black);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Brutal Shadows */
+    .shadow-brutal {
+      box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+    }
+
+    .shadow-brutal-lg {
+      box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+    }
+
+    .shadow-brutal-xl {
+      box-shadow: 12px 12px 0px 0px rgba(0, 0, 0, 1);
+    }
+
+    /* Typography */
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      border-bottom: 4px solid var(--purdue-black);
+      z-index: 1000;
+      padding: 1rem 1.5rem;
+    }
+
+    .nav-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: none;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--purdue-black);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--campus-gold);
+    }
+
+    .menu-toggle {
+      display: block;
+      background: none;
+      border: 2px solid var(--purdue-black);
+      padding: 0.5rem;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: var(--purdue-black);
+      margin: 5px 0;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 73px;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      border-bottom: 4px solid var(--purdue-black);
+      padding: 1rem;
+    }
+
+    .mobile-menu.active {
+      display: block;
+    }
+
+    .mobile-menu ul {
+      list-style: none;
+    }
+
+    .mobile-menu li {
+      padding: 0.75rem 0;
+      border-bottom: 2px solid var(--gray);
+    }
+
+    .mobile-menu a {
+      text-decoration: none;
+      color: var(--purdue-black);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex;
+      }
+      .menu-toggle {
+        display: none;
+      }
+    }
+
+    /* Hero Section */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+      margin-top: 73px;
+    }
+
+    .floating-shape {
+      position: absolute;
+      border: 4px solid var(--purdue-black);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(var(--rotate)); }
+      50% { transform: translateY(-20px) rotate(var(--rotate)); }
+    }
+
+    .shape-1 { width: 128px; height: 128px; background: var(--campus-gold); left: 10%; top: 20%; --rotate: 45deg; animation-delay: 0s; }
+    .shape-2 { width: 96px; height: 96px; background: var(--athletic-gold); left: 80%; top: 15%; --rotate: -30deg; animation-delay: 0.2s; }
+    .shape-3 { width: 112px; height: 112px; background: var(--gray); left: 15%; top: 70%; --rotate: 15deg; animation-delay: 0.4s; }
+    .shape-4 { width: 80px; height: 80px; background: var(--muted); left: 85%; top: 75%; --rotate: -45deg; animation-delay: 0.6s; }
+    .shape-5 { width: 64px; height: 64px; background: var(--campus-gold); left: 50%; top: 10%; --rotate: 60deg; animation-delay: 0.8s; }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      max-width: 1152px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: clamp(3rem, 10vw, 5rem);
+      line-height: 1;
+      margin-bottom: 2rem;
+    }
+
+    .hero-text h1 span:last-child {
+      display: inline-block;
+      transform: rotate(-2deg);
+      margin: 1rem 0;
+    }
+
+    .hero-subtitle {
+      display: inline-block;
+      background: var(--campus-gold);
+      border: 8px solid var(--purdue-black);
+      padding: 1.5rem 2rem;
+      transform: rotate(1deg);
+      font-size: clamp(1.25rem, 3vw, 1.875rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .btn {
+      padding: 1rem 2rem;
+      font-size: 1.125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 4px solid var(--purdue-black);
+      cursor: pointer;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-primary {
+      background: var(--athletic-gold);
+      color: var(--purdue-black);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--purdue-black);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+    }
+
+    .stats-box {
+      background: var(--athletic-gold);
+      border: 8px solid var(--purdue-black);
+      padding: 2rem;
+      transform: rotate(-3deg);
+    }
+
+    .stats-header {
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      opacity: 0.7;
+    }
+
+    .stat-item {
+      background: var(--white);
+      border: 4px solid var(--purdue-black);
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .stat-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+
+    .stat-label {
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    @media (min-width: 1024px) {
+      .hero-content {
+        grid-template-columns: 3fr 2fr;
+      }
+      .stats-box {
+        box-shadow: 12px 12px 0px 0px rgba(0, 0, 0, 1);
+      }
+    }
+
+    /* Section Styles */
+    section {
+      padding: 6rem 1.5rem;
+    }
+
+    .section-title {
+      font-size: clamp(3rem, 8vw, 5rem);
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .title-underline {
+      height: 8px;
+      width: 12rem;
+      background: var(--purdue-black);
+      transform: rotate(2deg);
+      margin-bottom: 4rem;
+    }
+
+    .container {
+      max-width: 1536px;
+      margin: 0 auto;
+    }
+
+    .container-md {
+      max-width: 1152px;
+      margin: 0 auto;
+    }
+
+    /* Awards Section */
+    #awards {
+      background: var(--muted);
+    }
+
+    .awards-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .award-card {
+      background: var(--white);
+      border: 6px solid var(--purdue-black);
+      padding: 2rem;
+      transition: all 0.3s;
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    .award-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .award-card:hover {
+      transform: scale(1.02) rotate(0deg);
+      box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+    }
+
+    .award-card:nth-child(1) { transform: rotate(1deg); }
+    .award-card:nth-child(2) { transform: rotate(-1deg); }
+    .award-card:nth-child(3) { transform: rotate(1deg); }
+    .award-card:nth-child(4) { transform: rotate(-1deg); }
+
+    .award-year {
+      background: var(--campus-gold);
+      border: 4px solid var(--purdue-black);
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      font-weight: 900;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .award-title {
+      font-size: 1.5rem;
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+    }
+
+    .award-org {
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--dark-gray);
+    }
+
+    .award-desc {
+      line-height: 1.5;
+    }
+
+    @media (min-width: 768px) {
+      .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Current Focus */
+    #focus {
+      background: var(--white);
+    }
+
+    .focus-intro {
+      max-width: 800px;
+      margin: 0 auto 3rem;
+      text-align: center;
+    }
+
+    .focus-intro h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: var(--white);
+      border: 6px solid var(--purdue-black);
+      padding: 2rem;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.3s;
+    }
+
+    .project-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+      box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-card p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    @media (min-width: 768px) {
+      .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Education */
+    #education {
+      background: var(--muted);
+    }
+
+    .education-list {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .education-card {
+      position: relative;
+      background: var(--white);
+      border: 8px solid var(--purdue-black);
+      padding: 2rem;
+      opacity: 0;
+      transform: translateX(-100px);
+      transition: all 0.5s;
+    }
+
+    .education-card.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .education-card:hover {
+      transform: scale(1.02) rotate(0deg);
+    }
+
+    .education-card:nth-child(1) { transform: rotate(1deg); }
+    .education-card:nth-child(2) { transform: rotate(-1deg); }
+    .education-card:nth-child(3) { transform: rotate(1deg); }
+
+    .education-year {
+      position: absolute;
+      top: -2rem;
+      left: -2rem;
+      font-size: 9rem;
+      font-weight: 900;
+      opacity: 0.2;
+      user-select: none;
+    }
+
+    .degree-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 4px solid var(--purdue-black);
+      padding: 0.5rem 1.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .degree-badge.phd { background: var(--campus-gold); }
+    .degree-badge.mba { background: var(--athletic-gold); }
+    .degree-badge.bs { background: var(--gray); }
+
+    .school-name {
+      font-size: 1.875rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .education-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .detail-item {
+      background: var(--muted);
+      border: 2px solid var(--purdue-black);
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      font-size: 0.875rem;
+    }
+
+    /* Experience */
+    #experience {
+      background: var(--white);
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .experience-card {
+      background: var(--white);
+      border: 6px solid var(--purdue-black);
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.5s;
+    }
+
+    .experience-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .experience-card:hover {
+      transform: scale(1.03) rotate(0deg);
+      box-shadow: 12px 12px 0px 0px rgba(0, 0, 0, 1);
+    }
+
+    .experience-card:nth-child(1) { transform: rotate(1deg); }
+    .experience-card:nth-child(2) { transform: rotate(-1deg); }
+    .experience-card:nth-child(3) { transform: rotate(0deg); }
+
+    .experience-header {
+      padding: 1.5rem;
+      border-bottom: 6px solid var(--purdue-black);
+    }
+
+    .exp-1 .experience-header { background: var(--campus-gold); }
+    .exp-2 .experience-header { background: var(--athletic-gold); }
+    .exp-3 .experience-header { background: var(--gray); }
+    .exp-4 .experience-header { background: var(--muted); }
+    .exp-5 .experience-header { background: var(--campus-gold); }
+    .exp-6 .experience-header { background: var(--athletic-gold); }
+
+    .experience-title {
+      font-size: 1.5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .experience-org {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .experience-period {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(0,0,0,0.1);
+      border: 2px solid var(--purdue-black);
+      padding: 0.25rem 0.75rem;
+      font-size: 0.875rem;
+      font-weight: 700;
+    }
+
+    .experience-body {
+      padding: 1.5rem;
+      background: var(--white);
+    }
+
+    .experience-body ul {
+      list-style: none;
+    }
+
+    .experience-body li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .experience-body li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--purdue-black);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+      margin-top: 0.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .experience-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Contact */
+    #contact {
+      background: var(--campus-gold);
+      border-top: 8px solid var(--purdue-black);
+    }
+
+    .contact-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .contact-email {
+      background: var(--white);
+      border: 6px solid var(--purdue-black);
+      padding: 2rem;
+      margin: 2rem 0;
+      transform: rotate(-1deg);
+    }
+
+    .contact-email a {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--purdue-black);
+      text-decoration: none;
+    }
+
+    .expertise-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+
+    .tag {
+      background: var(--white);
+      border: 3px solid var(--purdue-black);
+      padding: 0.5rem 1rem;
+      font-weight: 700;
+      font-size: 0.875rem;
+    }
+
+    footer {
+      background: var(--purdue-black);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem;
+      border-top: 4px solid var(--purdue-black);
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-in {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-logo">Dr. Cuneyt Altinoz</div>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#awards" class="nav-link">Awards</a></li>
+        <li><a href="#focus" class="nav-link">Focus</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero" class="mobile-link">Home</a></li>
+      <li><a href="#awards" class="mobile-link">Awards</a></li>
+      <li><a href="#focus" class="mobile-link">Focus</a></li>
+      <li><a href="#education" class="mobile-link">Education</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="floating-shape shape-1 shadow-brutal"></div>
+    <div class="floating-shape shape-2 shadow-brutal"></div>
+    <div class="floating-shape shape-3 shadow-brutal"></div>
+    <div class="floating-shape shape-4 shadow-brutal"></div>
+    <div class="floating-shape shape-5 shadow-brutal"></div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>
+          <span>CUNEYT</span><br>
+          <span>ALTINOZ</span>
+        </h1>
+        <div class="hero-subtitle shadow-brutal-lg">
+          Professor at Purdue University Global
+        </div>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary shadow-brutal">
+            <span>✉</span> Get in Touch
+          </a>
+          <a href="#awards" class="btn btn-secondary shadow-brutal">
+            Learn More <span>↓</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="stats-box shadow-brutal-xl">
+        <div class="stats-header">Welcome students. You are in good hands!</div>
+        <div class="stat-item">
+          <div class="stat-number">16+</div>
+          <div class="stat-label">Years at Purdue Global</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">22</div>
+          <div class="stat-label">Years Teaching Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Major Awards</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards Section -->
+  <section id="awards">
+    <div class="container-md">
+      <h2 class="section-title" style="transform: rotate(1deg);">Awards & Recognition</h2>
+      <div class="title-underline"></div>
+
+      <div class="awards-grid">
+        <div class="award-card shadow-brutal-lg scroll-reveal">
+          <div class="award-year shadow-brutal">2025</div>
+          <h3 class="award-title">Innovative Online Use of Technology</h3>
+          <div class="award-org">Purdue University Online</div>
+          <p class="award-desc">Recognized for custom AI assistants helping graduate students</p>
+        </div>
+
+        <div class="award-card shadow-brutal-lg scroll-reveal">
+          <div class="award-year shadow-brutal">2023</div>
+          <h3 class="award-title">Excellence in Online Course Design and Delivery</h3>
+          <div class="award-org">Purdue University Online</div>
+          <p class="award-desc">Student-centric design of GB 513 Business Analytics</p>
+        </div>
+
+        <div class="award-card shadow-brutal-lg scroll-reveal">
+          <div class="award-year shadow-brutal">2021</div>
+          <h3 class="award-title">ACBSP Teaching Excellence Award</h3>
+          <div class="award-org">ACBSP</div>
+          <p class="award-desc">One of 7 winners in the United States</p>
+        </div>
+
+        <div class="award-card shadow-brutal-lg scroll-reveal">
+          <div class="award-year shadow-brutal">2016</div>
+          <h3 class="award-title">School of Business Professor of the Year</h3>
+          <div class="award-org">Purdue University Global</div>
+          <p class="award-desc">Recognized for outstanding teaching and student engagement</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Current Focus -->
+  <section id="focus">
+    <div class="container-md">
+      <h2 class="section-title" style="transform: rotate(-1deg);">Current Focus</h2>
+      <div class="title-underline" style="transform: rotate(-2deg);"></div>
+
+      <div class="focus-intro">
+        <h3>AI Systems for Education</h3>
+        <p>Evaluation of developing AI systems for education - use of Gems, GPTs and webapps coded with AI assistance.</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card shadow-brutal-lg scroll-reveal">
+          <h3>Research Methodology Selector</h3>
+          <p>Interactive tool for DBA students to identify appropriate research methodologies</p>
+          <a href="https://cunmayday.github.io/webtests/methods.html" target="_blank" class="btn btn-primary shadow-brutal">View Project</a>
+        </div>
+
+        <div class="project-card shadow-brutal-lg scroll-reveal">
+          <h3>Analytics Case Study</h3>
+          <p>Comprehensive case study example demonstrating business analytics applications</p>
+          <a href="https://cunmayday.github.io/webtests/caseada.html" target="_blank" class="btn btn-primary shadow-brutal">View Project</a>
+        </div>
+
+        <div class="project-card shadow-brutal-lg scroll-reveal" style="background: var(--muted);">
+          <h3>AI Use Cases Catalog</h3>
+          <p>Curated collection of AI applications and use cases in education</p>
+          <a href="https://usecases.vercel.app/index.html" target="_blank" class="btn btn-primary shadow-brutal">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="container-md">
+      <h2 class="section-title" style="transform: rotate(1deg);">Education</h2>
+      <div class="title-underline"></div>
+
+      <div class="education-list">
+        <div class="education-card shadow-brutal-lg scroll-reveal">
+          <div class="education-year">2001</div>
+          <div class="degree-badge phd shadow-brutal">
+            <span>🎓</span>
+            <span>PhD</span>
+          </div>
+          <h3 class="school-name">North Carolina State University</h3>
+          <div class="education-details">
+            <div class="detail-item">📍 Raleigh, NC</div>
+            <div class="detail-item">📅 1997-2001</div>
+          </div>
+        </div>
+
+        <div class="education-card shadow-brutal-lg scroll-reveal">
+          <div class="education-year">1996</div>
+          <div class="degree-badge mba shadow-brutal">
+            <span>🎓</span>
+            <span>MBA</span>
+          </div>
+          <h3 class="school-name">Georgia Institute of Technology</h3>
+          <div class="education-details">
+            <div class="detail-item">📍 Atlanta, GA</div>
+            <div class="detail-item">📅 1994-1996</div>
+          </div>
+        </div>
+
+        <div class="education-card shadow-brutal-lg scroll-reveal">
+          <div class="education-year">1994</div>
+          <div class="degree-badge bs shadow-brutal">
+            <span>🎓</span>
+            <span>BS - Industrial Engineering</span>
+          </div>
+          <h3 class="school-name">North Carolina State University</h3>
+          <div class="education-details">
+            <div class="detail-item">📍 Raleigh, NC</div>
+            <div class="detail-item">📅 1990-1994</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title" style="transform: rotate(-1deg);">Experience</h2>
+      <div class="title-underline" style="transform: rotate(-2deg); width: 16rem;"></div>
+
+      <div class="experience-grid">
+        <div class="experience-card exp-1 shadow-brutal-lg scroll-reveal">
+          <div class="experience-header">
+            <h3 class="experience-title">💼 Professor</h3>
+            <div class="experience-org">Purdue University Global</div>
+            <div class="experience-period">📅 2009 - Present</div>
+          </div>
+          <div class="experience-body">
+            <ul>
+              <li>Faculty lead in charge of developing the new Doctorate in Business Administration program</li>
+              <li>Course lead for GB 513 Business Statistics, GB 700 Doctoral Studies in Business and GB 701 Business Statistics</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-card exp-2 shadow-brutal-lg scroll-reveal">
+          <div class="experience-header">
+            <h3 class="experience-title">💼 Assistant Professor</h3>
+            <div class="experience-org">East Carolina University</div>
+            <div class="experience-period">📅 2003 - 2008</div>
+          </div>
+          <div class="experience-body">
+            <ul>
+              <li>Marketing and Supply Chain Management department, College of Business</li>
+              <li>Teaching MBA and undergraduate courses in operations management, business decision modeling, supply chain management</li>
+              <li>Research in decision analysis, fuzzy logic, supply chain management</li>
+              <li>Took the lead in establishing a new online supply chain program. Developed a new SCM course, then a concentration program which eventually merged with Marketing to become a new department</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-card exp-3 shadow-brutal-lg scroll-reveal">
+          <div class="experience-header">
+            <h3 class="experience-title">💼 Post-doctoral Research Fellow</h3>
+            <div class="experience-org">North Carolina State University</div>
+            <div class="experience-period">📅 2001 - 2003</div>
+          </div>
+          <div class="experience-body">
+            <ul>
+              <li>Created fuzzy logic based decision support system for supplier selection</li>
+              <li>Filed for 2 patents for building linguistic decision rules</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-card exp-4 shadow-brutal-lg scroll-reveal">
+          <div class="experience-header">
+            <h3 class="experience-title">💼 Research Assistant</h3>
+            <div class="experience-org">North Carolina State University</div>
+            <div class="experience-period">📅 1997 - 2001</div>
+          </div>
+          <div class="experience-body">
+            <ul>
+              <li>Conducted research regarding decision support systems</li>
+              <li>Performance measurement in and of organizations</li>
+              <li>Simulations to analyze coordination</li>
+              <li>Workflow analysis of business processes</li>
+              <li>Support for business decisions using fuzzy logic</li>
+              <li>Developed two software programs</li>
+              <li>Research results led to opportunities for patents and business establishment</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-card exp-5 shadow-brutal-lg scroll-reveal">
+          <div class="experience-header">
+            <h3 class="experience-title">💼 Consultant</h3>
+            <div class="experience-org">CIBA Vision, Atlanta GA</div>
+            <div class="experience-period">📅 1995 - 1997</div>
+          </div>
+          <div class="experience-body">
+            <ul>
+              <li>Consulted regarding inventory control issues</li>
+              <li>Developed and implemented new methodology for effective inventory control</li>
+              <li>Deliverables included inventory target levels and software tools</li>
+              <li>Expanded work to additional product lines after initial success</li>
+              <li>Analyzed shipping warehouse efficiency</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-card exp-6 shadow-brutal-lg scroll-reveal">
+          <div class="experience-header">
+            <h3 class="experience-title">💼 Operations Analyst</h3>
+            <div class="experience-org">IBM, Atlanta GA</div>
+            <div class="experience-period">📅 1995</div>
+          </div>
+          <div class="experience-body">
+            <ul>
+              <li>Analyzed service operations and developed measurement tools</li>
+              <li>Developed cost analysis tools and financial forecasts</li>
+              <li>Created new queries for information collection</li>
+              <li>Produced analysis reports and performance forecasts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact-content">
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="title-underline" style="background: var(--purdue-black);"></div>
+
+      <div class="contact-email shadow-brutal-lg">
+        <div style="font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem;">Email</div>
+        <a href="mailto:caltinoz@purdueglobal.edu">caltinoz@purdueglobal.edu</a>
+      </div>
+
+      <h3 style="font-size: 1.5rem; margin: 2rem 0 1rem;">Areas of Expertise</h3>
+      <div class="expertise-tags">
+        <span class="tag">Business Administration</span>
+        <span class="tag">AI in Education</span>
+        <span class="tag">Decision Support Systems</span>
+        <span class="tag">Inventory Control</span>
+        <span class="tag">Industrial Engineering</span>
+        <span class="tag">Online Education</span>
+        <span class="tag">Educational Technology</span>
+      </div>
+
+      <p style="font-size: 1.25rem; font-weight: 700; margin-top: 2rem;">
+        Open to Collaboration & Research Opportunities
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Cuneyt Altinoz. Vanilla HTML version - zero dependencies.</p>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+      });
+    });
+
+    // Active Navigation
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    function updateActiveNav() {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveNav);
+
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all scroll-reveal elements
+    document.querySelectorAll('.scroll-reveal').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
