@@ -4,7 +4,7 @@ import { Award, Trophy, Star, Users } from "lucide-react";
 const awards = [
   {
     year: "2025",
-    title: "Innovative Online Use of Technology",
+    title: "Award for Innovative Online Use of Technology",
     organization: "Purdue University Online",
     description: "Recognized for custom AI assistants helping graduate students",
     icon: Star,
@@ -12,7 +12,7 @@ const awards = [
   },
   {
     year: "2023",
-    title: "Excellence in Online Course Design and Delivery",
+    title: "Award for Excellence in Online Course Design and Delivery",
     organization: "Purdue University Online",
     description: "Student-centric design of GB 513 Business Analytics",
     icon: Award,
@@ -21,7 +21,7 @@ const awards = [
   {
     year: "2021",
     title: "ACBSP Teaching Excellence Award",
-    organization: "ACBSP",
+    organization: "Accreditation Council for Business Schools and Programs",
     description: "One of 7 winners in the United States",
     icon: Trophy,
     color: "bg-chart-3",

@@ -8,7 +8,8 @@ const experiences = [
     period: "2009 - Present",
     highlights: [
       "Faculty lead in charge of developing the new Doctorate in Business Administration program",
-      "Course lead for GB 513 Business Statistics, GB 700 Doctoral Studies in Business and GB 701 Business Statistics",
+      "Course Lead and Course Designer for GB 513 Business Analytics, GB 700 Doctoral Studies in Business and GB 701 Business Statistics",
+      "Former Course Lead and Course Designer for MT 400 Business Process Management, MT 433 Supply chain management, MT 436 Purchasing.",
     ],
     color: "bg-primary",
   },
@@ -19,8 +20,6 @@ const experiences = [
     highlights: [
       "Marketing and Supply Chain Management department, College of Business",
       "Teaching MBA and undergraduate courses in operations management, business decision modeling, supply chain management",
-      "Research in decision analysis, fuzzy logic, supply chain management",
-      "Took the lead in establishing a new online supply chain program. Developed a new SCM course, then a concentration program which eventually merged with Marketing to become a new department",
     ],
     color: "bg-secondary",
   },
@@ -30,7 +29,7 @@ const experiences = [
     period: "2001 - 2003",
     highlights: [
       "Created fuzzy logic based decision support system for supplier selection",
-      "Filed for 2 patents for building linguistic decision rules",
+      "NCSU Technology Transfer Office accepted two \"inventions\" for building linguistic decision rule sets.",
     ],
     color: "bg-chart-3",
   },
@@ -45,7 +44,6 @@ const experiences = [
       "Workflow analysis of business processes",
       "Support for business decisions using fuzzy logic",
       "Developed two software programs",
-      "Research results led to opportunities for patents and business establishment",
     ],
     color: "bg-muted",
   },
@@ -62,18 +60,6 @@ const experiences = [
     ],
     color: "bg-primary",
   },
-  {
-    title: "Operations Analyst",
-    organization: "IBM, Atlanta GA",
-    period: "1995",
-    highlights: [
-      "Analyzed service operations and developed measurement tools",
-      "Developed cost analysis tools and financial forecasts",
-      "Created new queries for information collection",
-      "Produced analysis reports and performance forecasts",
-    ],
-    color: "bg-secondary",
-  },
 ];
 
 export default function Experience() {
@@ -88,7 +74,7 @@ export default function Experience() {
           className="mb-16"
         >
           <h2 className="text-5xl md:text-7xl font-black uppercase mb-4 -rotate-1 inline-block">
-            Experience
+            Selected Work Experience
           </h2>
           <div className="h-2 w-64 bg-black -rotate-2"></div>
         </motion.div>

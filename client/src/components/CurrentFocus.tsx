@@ -17,9 +17,21 @@ const projects = [
   },
   {
     title: "AI Use Cases Catalog",
-    description: "Curated collection of AI applications and use cases in education",
+    description: "Sample system and schema for a curated collection of AI applications and use cases in education",
     url: "https://usecases.vercel.app/index.html",
     color: "bg-chart-3",
+  },
+  {
+    title: "Gem/GPT Builder for Assignment Evaluation",
+    description: "A Gemini Gem that will interview you and produce the system prompt for a GPT/Gem that can evaluate student assignments and provide feedback, or help with grading. (You must be signed to Google to see it).",
+    url: "https://gemini.google.com/gem/1jHqdyoB90XMVvaF_0QRYWOpGeniPw2S3?usp=sharing",
+    color: "bg-primary",
+  },
+  {
+    title: "Mock Interviewer",
+    description: "A custom GPT that can help you practice for your job interviews. Use voice mode for immersion!",
+    url: "https://chatgpt.com/g/g-xbaumDK21-mock-interviewer",
+    color: "bg-secondary",
   },
 ];
 
