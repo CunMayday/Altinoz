@@ -39,10 +39,8 @@ const experiences = [
     period: "1997 - 2001",
     highlights: [
       "Conducted research regarding decision support systems",
-      "Performance measurement in and of organizations",
       "Simulations to analyze coordination",
       "Workflow analysis of business processes",
-      "Support for business decisions using fuzzy logic",
       "Developed two software programs",
     ],
     color: "bg-muted",
@@ -54,9 +52,6 @@ const experiences = [
     highlights: [
       "Consulted regarding inventory control issues",
       "Developed and implemented new methodology for effective inventory control",
-      "Deliverables included inventory target levels and software tools",
-      "Expanded work to additional product lines after initial success",
-      "Analyzed shipping warehouse efficiency",
     ],
     color: "bg-primary",
   },
