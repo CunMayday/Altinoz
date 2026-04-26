@@ -35,7 +35,7 @@ const projects = [
   },
   {
     title: "AI Assisted Project Development Framework",
-    description: "AI-synchronized, requirements-first project execution framework adopting requirement-driven development concepts. Presents a process to follow including AI prompts.",
+    description: "AI assisted project planning and execution framework adopting requirement-driven development concepts from software development to general projects. Presents a process including AI prompts at each step.",
     url: "https://github.com/CunMayday/Groundwork",
     color: "bg-chart-3",
   },
@@ -76,7 +76,7 @@ export default function CurrentFocus() {
         >
           <h3 className="text-3xl font-black uppercase mb-4">AI Systems for Education</h3>
           <p className="text-lg font-medium leading-relaxed">
-            Exploring methods for leveraging generative AI for improving learning experience. Selected samples below.
+            Exploring methods for leveraging generative AI for improving learning experience. Selected samples below showing AI-assisted educational tools.
           </p>
         </motion.div>
 
