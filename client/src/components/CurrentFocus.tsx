@@ -41,8 +41,8 @@ const projects = [
   },
   {
     title: "Sample Gem for Writing Research Questions",
-    description: "This Gem shows how an AI assistant can provide formative help and guidance for students in building a complex construct, like a research question.",
-    url: "https://www.pinterest.com/pin/239113061455153620/",
+    description: "This Gem shows how an AI assistant can provide formative help and guidance for students in building a complex construct, like a research question. (You must be signed to Google to see it)",
+    url: "https://gemini.google.com/u/1/gem/b1700a7daae4",
     color: "bg-primary",
   },
 ];
