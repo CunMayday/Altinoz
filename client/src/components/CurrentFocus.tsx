@@ -35,7 +35,7 @@ const projects = [
   },
   {
     title: "AI Assisted Project Development Framework",
-    description: "AI assisted project planning and execution framework adopting requirement-driven development concepts from software development to general projects. Presents a process including AI prompts at each step.",
+    description: "AI assisted project planning framework adopting requirement-driven development concepts from software development to general projects. Presents a process including AI prompts at each step.",
     url: "https://github.com/CunMayday/Groundwork",
     color: "bg-chart-3",
   },
