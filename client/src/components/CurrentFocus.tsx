@@ -33,6 +33,18 @@ const projects = [
     url: "https://chatgpt.com/g/g-xbaumDK21-mock-interviewer",
     color: "bg-secondary",
   },
+  {
+    title: "AI Assisted Project Development Framework",
+    description: "AI-synchronized, requirements-first project execution framework adopting requirement-driven development concepts. Presents a process to follow including AI prompts.",
+    url: "https://github.com/CunMayday/Groundwork",
+    color: "bg-chart-3",
+  },
+  {
+    title: "Sample Gem for Writing Research Questions",
+    description: "This Gem shows how an AI assistant can provide formative help and guidance for students in building a complex construct, like a research question.",
+    url: "https://www.pinterest.com/pin/239113061455153620/",
+    color: "bg-primary",
+  },
 ];
 
 export default function CurrentFocus() {
