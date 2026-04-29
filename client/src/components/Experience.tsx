@@ -29,7 +29,7 @@ const experiences = [
     period: "2001 - 2003",
     highlights: [
       "Created fuzzy logic based decision support system for supplier selection",
-      "NCSU Technology Transfer Office accepted two \"inventions\" for building linguistic decision rule sets.",
+      "NCSU Technology Transfer Office accepted two invention disclosures for building linguistic decision rule sets.",
     ],
     color: "bg-chart-3",
   },
